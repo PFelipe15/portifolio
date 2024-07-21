@@ -5,7 +5,13 @@ const nextConfig = {
         remotePatterns: [
           {
              hostname: 'images.unsplash.com',
-            },
+          },
+          {
+             hostname: 'websitedemos.net',
+          },
+          {
+             hostname: 'lightgrey-caribou-166647.hostingersite.com',
+          },
         ],
       },
 };

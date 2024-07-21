@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
  import "./globals.css";
 
-import { Playfair_Display } from "next/font/google";
+import { Work_Sans } from "next/font/google";
 
-const play = Playfair_Display({ subsets: ["latin"] });
+const font = Work_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${play.className}  bg-slate-950`} >{children}</body>
+      <body className={`${font.className}  `} >{children}</body>
     </html>
   );
 }
