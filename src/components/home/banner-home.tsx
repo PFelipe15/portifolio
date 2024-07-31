@@ -1,12 +1,12 @@
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 'use client'
 import { motion } from 'framer-motion';
 import { Button } from '../ui/button';
 import { BsInstagram, BsLinkedin } from 'react-icons/bs';
-import Image from 'next/image';
-import Felipe from '../../app/DrawKit Vector Illustration Team Work (17).svg';
-import Typed, { ReactTyped } from 'react-typed';
-
+ import Felipe from '../../app/DrawKit Vector Illustration Team Work (17).svg';
+import { ReactTyped } from 'react-typed';
+ 
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -34,11 +34,11 @@ export default function BannerSection() {
       initial="hidden"
       animate="visible"
       variants={containerVariants}
-      className="flex container gap-8 flex-grow bg-gradient-to-r from-primary via-red-500 to-pink-700 rounded-md justify-center items-center p-8"
+      className="flex container  flex-col md:flex-row gap-8 flex-grow bg-gradient-to-r from-primary via-red-500 to-pink-700 rounded-md justify-center items-center p-8"
     >
       <motion.nav
         variants={containerVariants}
-        className="flex flex-col gap-10"
+        className="flex md:flex-col  gap-10"
       >
         <motion.div whileHover={{ scale: 1.2, rotate: 10 }} whileTap={{ scale: 0.9 }} variants={itemVariants}>
           <BsInstagram size={30} />
@@ -50,10 +50,10 @@ export default function BannerSection() {
 
       <motion.div
         variants={itemVariants}
-        className="max-w-4xl flex flex-col gap-8 items-start"
+        className="max-w-4xl flex   flex-col gap-8 items-start"
       >
         <motion.h1
-          className="text-7xl"
+          className="text-5xl md:text-7xl"
         >
           {['Sou', 'o', 'Desenvolvedor', 'Paulo', 'Felipe'].map((word, index) => (
             <motion.span
@@ -89,11 +89,10 @@ export default function BannerSection() {
         animate={{ scale: 1, opacity: 1 }}
         transition={{ delay: 1.1, duration: 0.5 }}
       >
-        <Image
-          src={Felipe}
-          width={900}
-          height={800}
-          className="object-cover"
+        <img
+          src="./Felipe.svg"
+       
+          className="object-cover h-[450px] w-[950px]"
         />
       </motion.div>
     </motion.section>

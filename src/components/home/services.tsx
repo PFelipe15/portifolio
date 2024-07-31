@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { BsArrowRight } from "react-icons/bs";
@@ -61,10 +62,8 @@ const ServiceSection = () => {
             whileHover={{ scale: 1.05, translateY: -5 }}
             className="flex flex-col items-center gap-4 bg-white p-4 rounded-lg shadow-lg text-center max-w-sm transition-transform duration-300"
           >
-            <Image
+            <img
               src={service.image}
-              width={100}
-              height={100}
               alt={service.title}
               className="h-24 w-24 object-contain"
             />

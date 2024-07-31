@@ -62,16 +62,19 @@ export default function HeaderSection() {
                 initial={{ x: 100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ delay: 0.6, duration: 0.5 }}
-                className="flex gap-4 items-center"
+                className="flex gap-4 items-center flex-col md:flex-row"
             >
                 <Button className="px-4 py-2 ">Contrate-me</Button>
                 <a
-                    href="/curriculo.pdf" // URL do seu currículo
+                    href="./CurriculoReformulado-Dev.pdf" // URL do seu currículo
                     download
                     className="flex items-center justify-center bg-primary text-white px-4 py-2 rounded-md  hover:bg-primary-dark transition duration-300"
                 >
                     Baixar Currículo
                 </a>
+
+                <div className='flex gap-4 m-2'>
+
                 <a
                     href="https://api.whatsapp.com/send?phone=SEUNUMERODEWHATSAPP" // Substitua pelo seu número de WhatsApp
                     target="_blank"
@@ -88,6 +91,7 @@ export default function HeaderSection() {
                 >
                     <FaLinkedinIn size={24} />
                 </a>
+                </div>
             </motion.div>
         </motion.header>
     );

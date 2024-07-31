@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from 'next/image';
 import photo from '../../app/photo-2.jpg';
 import { motion } from 'framer-motion';
@@ -81,7 +82,7 @@ export default function AboutMeSection() {
           transition={{ delay: 1.2, duration: 0.8 }}
         >
           <div className="relative rounded-lg border-r-8 border-primary overflow-hidden">
-            <Image src={photo} alt="Workstation" className="object-contain h-96" />
+            <img src={"./photo-2.jpg"} alt="Workstation" className="object-contain h-96" />
           </div>
         </motion.div>
       </div>

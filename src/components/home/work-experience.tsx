@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const WorkExperienceSession = () => {
   return (
-    <div className="w-screen rounded-tl-[850px]   rounded-t-[500px] bg-slate-200 pt-32 flex flex-col gap-8">
+    <div className="container rounded-tl-[450px]   rounded-t-[500px]   bg-slate-200 p-10  flex flex-col gap-8">
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
