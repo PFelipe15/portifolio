@@ -61,14 +61,14 @@ export default function AboutMeSection() {
             transition={{ delay: 1, duration: 0.8 }}
           >
             <p className="mb-4">
-              Com uma formação sólida e experiência prática em desenvolvimento web e mobile, estou sempre em busca de novos desafios. Gosto de explorar novas tecnologias e metodologias para criar soluções eficazes e de alta qualidade.
+              Com uma formação sólida e experiência prática em desenvolvimento web, mobile e desktop, estou sempre em busca de novos desafios. Gosto de explorar novas tecnologias e metodologias para criar soluções eficazes e de alta qualidade.
             </p>
             <p className="mb-4">
               Meu objetivo é contribuir para projetos inovadores e colaborar com equipes dinâmicas, sempre focando no crescimento contínuo, tanto profissional quanto da empresa.
             </p>
           </motion.div>
           <motion.button
-            className="px-4 py-2 bg-secondary font-semibold rounded-md"
+            className="px-4 py-2 bg-secondary   text-white rounded-md"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
