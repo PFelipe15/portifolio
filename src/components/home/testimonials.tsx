@@ -1,35 +1,39 @@
 /* eslint-disable @next/next/no-img-element */
 import { motion } from "framer-motion";
 import { BsQuote } from "react-icons/bs";
-const solutions = './solutions.png'
+const solutions = './solutions.png';
+
 const TestimonialsSection = () => {
   const testimonials = [
     {
       image: solutions,
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt arcu in felis tristique, ac dignissim sapien gravida.",
-      name: "John Doe",
+      name: "George Ventura",
+      funcao: "CEO"
     },
     {
       image: solutions,
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt arcu in felis tristique, ac dignissim sapien gravida.",
       name: "John Doe",
+      funcao: "Desenvolvedor Senior"
     },
     {
       image: solutions,
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt arcu in felis tristique, ac dignissim sapien gravida.",
-      name: "John Doe",
+      name: "Jane Doe",
+      funcao: "Gestora de Projetos"
     },
   ];
 
   return (
-    <section className="w-screen  bg-red-200 mt-16 text-black min-h-[70vh] rounded-tl-[750px] p-8">
+    <section className="w-screen bg-red-200 mt-16 text-black min-h-[70vh] rounded-tl-[750px] p-8">
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         className="flex items-center flex-col gap-4"
       >
-        <h1 className="text-3xl font-semibold">What My Clients Says</h1>
+        <h1 className="text-3xl font-semibold">What My Clients Say</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <div className="w-44 h-[0.2rem] bg-primary mb-4 mt-4"></div>
       </motion.div>
@@ -57,6 +61,7 @@ const TestimonialsSection = () => {
             </p>
             <div className="w-10 h-[0.2rem] bg-primary mt-4"></div>
             <p className="text-xl font-semibold mt-2">{testimonial.name}</p>
+            <p className="text-md font-medium text-gray-500">{testimonial.funcao}</p>
           </motion.div>
         ))}
       </motion.div>

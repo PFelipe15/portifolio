@@ -14,7 +14,7 @@ const data = [
     Descricao:
       "Jogo de perguntas e respostas que identifica o perfil cerebral do jogador usando Vite.js, Next.js e animações.",
     link: "https://github.com/PFelipe15/GameBeeBrain",
-  linkBuild: "https://beelivesolutions.com/welcomepage.html",
+    linkBuild: "https://beelivesolutions.com/welcomepage.html",
     tecnologias: ["Javascript", "Next.js", "Firebase Firestore", "Framer Motion", "NoSql"],
   },
   {

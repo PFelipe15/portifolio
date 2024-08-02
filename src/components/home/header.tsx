@@ -64,11 +64,16 @@ export default function HeaderSection() {
                 transition={{ delay: 0.6, duration: 0.5 }}
                 className="flex gap-4 items-center flex-col md:flex-row"
             >
-                <Button className="px-4 py-2 ">Contrate-me</Button>
+                <a href="https://api.whatsapp.com/send?phone=5586988034600&text=Olá,%20estou%20interessado%20em%20seus%20serviços.%20Poderia%20me%20fornecer%20mais%20informações?" 
+   target="_blank" 
+   rel="noopener noreferrer"
+   className="bg-primary text-white p-2 hover:scale-105 transition-all inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50">
+   Contrate-me
+</a>
                 <a
                     href="./CurriculoReformulado-Dev.pdf" // URL do seu currículo
                     download
-                    className="flex items-center justify-center bg-primary text-white px-4 py-2 rounded-md  hover:bg-primary-dark transition duration-300"
+                    className="bg-primary text-white p-2  hover:scale-105 transition-all inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
                 >
                     Baixar Currículo
                 </a>
@@ -76,10 +81,10 @@ export default function HeaderSection() {
                 <div className='flex gap-4 m-2'>
 
                 <a
-                    href="https://api.whatsapp.com/send?phone=SEUNUMERODEWHATSAPP" // Substitua pelo seu número de WhatsApp
+                  href="https://api.whatsapp.com/send?phone=5586988034600&text=Olá,%20estou%20interessado%20em%20seus%20serviços.%20Poderia%20me%20fornecer%20mais%20informações?"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-primary hover:text-primary-dark transition duration-300"
+                    className="text-primary hover:text-primary-dark hover:scale-105 transition duration-300"
                 >
                     <FaWhatsapp size={24} />
                 </a>
@@ -87,7 +92,7 @@ export default function HeaderSection() {
                     href="https://www.linkedin.com/in/seuperfil/" // Substitua pelo seu perfil do LinkedIn
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-primary hover:text-primary-dark transition duration-300"
+                    className="text-primary hover:text-primary-dark transition duration-300 hover:scale-105"
                 >
                     <FaLinkedinIn size={24} />
                 </a>

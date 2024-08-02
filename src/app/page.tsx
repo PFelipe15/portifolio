@@ -42,7 +42,6 @@ export default function Home() {
       
 <StayInTouchSection />
      
-      <Footer/>
-    </main>
+     </main>
   );
 }

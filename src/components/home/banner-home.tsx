@@ -79,8 +79,8 @@ export default function BannerSection() {
         </motion.p>
 
         <motion.div  variants={itemVariants} className='flex gap-4' >
-          <Button className='bg-white text-primary'>Ver Mais</Button>
-          <Button className='bg-white text-primary'>Baixar Curriculo</Button>
+          <a  href='/about' className='bg-white text-primary p-2 bg-secondary  hover:scale-105 transition-all inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50'>Ver Mais</a>
+          <a  href="./CurriculoReformulado-Dev.pdf " download className='bg-white text-primary p-2 bg-secondary  hover:scale-105 transition-all inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50'>Baixar Curriculo</a>
         </motion.div>
       </motion.div>
 

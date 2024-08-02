@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Fira_Sans } from "next/font/google";
 import HeaderSection from "@/components/home/header";
+import Footer from "@/components/footer";
 
 const font = Fira_Sans({ subsets: ["latin"], weight: ['100', '200', '300', '400', '500'] });
 
@@ -62,6 +63,7 @@ export default function RootLayout({
       <body className={font.className}>
         <HeaderSection />
         {children}
+        <Footer/>
       </body>
     </html>
   );

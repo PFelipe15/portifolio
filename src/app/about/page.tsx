@@ -121,7 +121,7 @@ export default function About() {
               <motion.a href="#" className="text-primary" {...iconHover}>
                 <FaInstagram size={24} />
               </motion.a>
-              <motion.a href="https://wa.me/5586988034600" className="text-primary" {...iconHover}>
+              <motion.a href="https://api.whatsapp.com/send?phone=5586988034600&text=Olá,%20estou%20interessado%20em%20seus%20serviços.%20Poderia%20me%20fornecer%20mais%20informações?" className="text-primary" {...iconHover}>
                 <FaWhatsapp size={24} />
               </motion.a>
             </motion.div>
